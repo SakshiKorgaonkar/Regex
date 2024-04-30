@@ -25,10 +25,25 @@ class Program
         {
             Console.WriteLine("Name not valid");
         }
+        Console.WriteLine("Enter email id : ");
+        string email = Console.ReadLine();
+        if (isValidEmail(email))
+        {
+            Console.WriteLine("Email is valid");
+        }
+        else
+        {
+            Console.WriteLine("Email not valid");
+        }
     }
      static bool isValidName(string name)
     {
         string pattern = @"^[A-Z].{2,}$";
         return Regex.IsMatch(name, pattern);
+    }
+    static bool isValidEmail(string emailid)
+    {
+        string pattern = @"^\b[a-zA-Z0-9.%+_-]+@[a-zA-Z0-9.-]+\.[A-Z|a-z]{2,}\b$";
+        return Regex.IsMatch(emailid, pattern);
     }
 }
