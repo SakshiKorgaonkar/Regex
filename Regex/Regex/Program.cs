@@ -5,7 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Enter user name : ");
+        Console.WriteLine("Enter first name : ");
         string name=Console.ReadLine();
         if(isValidName(name))
         {
@@ -45,12 +45,22 @@ class Program
         {
             Console.WriteLine("Phone not valid");
         }
+        Console.WriteLine("Enter password : ");
+        string pass = Console.ReadLine();
+        if (isValidPassword(pass))
+        {
+            Console.WriteLine("Password is valid");
+        }
+        else
+        {
+            Console.WriteLine("Password not valid");
+        }
     }
      static bool isValidName(string name)
-    {
+     {
         string pattern = @"^[A-Z].{2,}$";
         return Regex.IsMatch(name, pattern);
-    }
+     }
     static bool isValidEmail(string emailid)
     {
         string pattern = @"^\b[a-zA-Z0-9.%+_-]+@[a-zA-Z0-9.-]+\.[A-Z|a-z]{2,}\b$";
@@ -58,7 +68,13 @@ class Program
     }
     static bool isValidPhone(string phoneNumber)
     {
-        string pattern = @"^\d{10}$";
+        string pattern = @"^\+\d{2}\s\d{10}$";
         return Regex.IsMatch(phoneNumber, pattern);
+    }
+    static bool isValidPassword(string password)
+    {
+        string pattern = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*()-_+=]).{8,}$";
+        
+        return Regex.IsMatch(password, pattern);
     }
 }
