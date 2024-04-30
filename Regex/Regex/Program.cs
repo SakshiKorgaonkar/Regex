@@ -15,6 +15,16 @@ class Program
         {
             Console.WriteLine("Name not valid");
         }
+        Console.WriteLine("Enter last name : ");
+        string name1 = Console.ReadLine();
+        if (isValidName(name1))
+        {
+            Console.WriteLine("Name is valid");
+        }
+        else
+        {
+            Console.WriteLine("Name not valid");
+        }
     }
      static bool isValidName(string name)
     {

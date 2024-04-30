@@ -12,3 +12,4 @@ C:\Users\DELL\OneDrive - HERE Global B.V\Desktop\CDAC\BridgeLabz_day3\Regex\Rege
 C:\Users\DELL\OneDrive - HERE Global B.V\Desktop\CDAC\BridgeLabz_day3\Regex\Regex\Regex\obj\Debug\net6.0\Regex.pdb
 C:\Users\DELL\OneDrive - HERE Global B.V\Desktop\CDAC\BridgeLabz_day3\Regex\Regex\Regex\obj\Debug\net6.0\Regex.genruntimeconfig.cache
 C:\Users\DELL\OneDrive - HERE Global B.V\Desktop\CDAC\BridgeLabz_day3\Regex\Regex\Regex\obj\Debug\net6.0\ref\Regex.dll
+C:\Users\DELL\OneDrive - HERE Global B.V\Desktop\CDAC\BridgeLabz_day3\Regex\Regex\Regex\obj\Debug\net6.0\Regex.sourcelink.json
