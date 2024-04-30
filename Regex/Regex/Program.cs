@@ -35,6 +35,16 @@ class Program
         {
             Console.WriteLine("Email not valid");
         }
+        Console.WriteLine("Enter phone number : ");
+        string phone = Console.ReadLine();
+        if (isValidPhone(phone))
+        {
+            Console.WriteLine("Phone is valid");
+        }
+        else
+        {
+            Console.WriteLine("Phone not valid");
+        }
     }
      static bool isValidName(string name)
     {
@@ -45,5 +55,10 @@ class Program
     {
         string pattern = @"^\b[a-zA-Z0-9.%+_-]+@[a-zA-Z0-9.-]+\.[A-Z|a-z]{2,}\b$";
         return Regex.IsMatch(emailid, pattern);
+    }
+    static bool isValidPhone(string phoneNumber)
+    {
+        string pattern = @"^\d{10}$";
+        return Regex.IsMatch(phoneNumber, pattern);
     }
 }
